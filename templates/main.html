@@ -1,0 +1,23 @@
+<!--アプリケーションのメインとなる画面-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電子オウム</title>
+</head>
+<body>
+    <h2>何か話しかけてみよう</h2>
+    <!--メイン画面の音声再生に関する処理をフォームで受け付ける-->
+    <form method = "POST" action = "/main_action">
+        <input type = "text" name = "talk" size = "15"><br><br>
+        <input type = "submit" value = "話しかける"><br><br>
+        <input type = "radio" name = "voice" value = "man_voice">男性風<br>
+        <input type = "radio" name = "voice" value = "woman_voice" checked>女性風
+        <audio id="start-mp3" preload>
+        <source src="gTTS_Text2Speech.mp3" type="audio/mp3" /></audio>     
+    </form>
+    <br>
+    <a href = "guide.html">使い方はこちら</a> <!--使用説明画面に遷移-->
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電子オウム使用説明書</title>
+    <style type = "text/css"><!--
+        h3.h3_1{
+            position: relative;
+            padding: 0.5em 0.7em;
+            margin: 2em 0;
+            background: #ffe6e6;
+            color: #a51f1f;
+            font-weight: bold;
+        }
+        .h3_1:after{
+            position: absolute;
+            content: '';
+            top: 100%;
+            left: 30px;
+            border: 15px solid transparent;
+            border-top: 15px solid #ffe6e6;
+            width: 0;
+            height: 0;
+        }
+        h3.h3_2{
+            margin:2em 0;
+            color: #29570d;
+            position: relative;
+            padding: 0.25em 1em;
+            border: solid 2px #74e030;
+            border-radius: 3px 0 3px 0;
+        }
+        .h3_2:before,.h3_2:after{
+            content: '';
+            position: absolute;
+            width:10px;
+            height: 10px;
+            border: solid 2px #74e030;
+            border-radius: 50%;
+        }
+        .h3_2:after{
+            top:-12px;
+            left:-12px;
+        }
+        .h3_2:before{
+            bottom:-12px;
+            right:-12px;
+        }
+        ol{
+            position: relative;
+            background: #fff0cd;
+            box-shadow: 0px 0px 0px 5px #fff0cd;
+            border: dashed 2px white;
+            /*padding: 0.2em 0.5em;*/
+            color: #1f1f1f;
+            margin: 10;
+        }
+        ol:after{
+            position: absolute;
+            content: '';
+            right: -7px;
+            top: -7px;
+            border-width: 0 15px 15px 0;
+            border-style: solid;
+            border-color: #ffdb88 #fff #ffdb88;
+            box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+        }
+        li.ol_1{
+            margin: 10;
+            padding: 10;
+        }
+        ul{
+            position: relative;
+            background: #d6ebff;
+            box-shadow: 0px 0px 0px 5px #d6ebff;
+            border: dashed 2px white;
+            /*padding: 0.2em 0.5em;*/
+            color: #1f1f1f;
+            margin: 10;
+        }
+        ul:after{
+            position: absolute;
+            content: '';
+            right: -7px;
+            top: -7px;
+            border-width: 0 15px 15px 0;
+            border-style: solid;
+            border-color: #3391f0 #fff #3391f0;
+            box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+        }
+        li.ul_1{
+            margin: 10;
+            padding: 10;
+        }
+        button.button_1{
+            padding: 0.5em 1em;
+            margin: 2em 0;
+            color: #1f1f1f;
+            background: #f4eaff;
+            border-bottom: solid 6px #efc3ff;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+            border-radius: 9px;
+        }
+    --></style>
+</head>
+<body>
+    <h2>Web版電子オウムへようこそ!</h2>
+    <h3 class = "h3_1">Web版電子オウムの使い方を説明します。</h3>
+    <p>
+        <ol>
+            <li class = "ol_1">テキストボックスに好きな単語や文章を入力する</li>
+            <li class = "ol_1">音声再生をする秒数を設定する（1~60秒まで設定できます）</li>
+            <li class = "ol_1">音声の速度を「普通」か「ゆっくり」のどちらかを選択する</li>
+            <li class = "ol_1">音声の言語を「日本語」か「英語」のどちらかに設定する</li>
+            <li class = "ol_1">入力が出来たら「話しかける」ボタンを押す</li>
+            <li class = "ol_1">入力した内容を音声再生する</li>
+        </ol>
+        <h3 class = "h3_2">電子オウムをもっと楽しく使うための豆知識</h3>
+        <ul>
+            <li class = "ul_1">メイン画面の「音声の速度を変える」メニューで音声再生されるときの音声の速度を変えることが出来ます。</li>
+            <li class = "ul_1">挨拶や掛け声などの短いものは5秒ほどに設定すると待ち時間を短縮できます。</li>
+            <li class = "ul_1">長めの文章を音声再生したいときは40~60秒くらいに設定するとちょうどよくなります。</li>
+            <li class = "ul_1">英文を音声再生したいときは「言語を変える」メニューの「英語」を選択することでネイティブな音声で再生することが出来ます。<br>
+            英文の発音の勉強をする際に役立ちます。</li>
+            <li class = "ul_1">音声再生中に「話しかける」ボタンを押すとエラーになってしまいますのでご注意ください。</li>
+        </ul>
+    </p>
+    <!--
+    <form method = "POST" action = "/">
+        <input type = "submit" value = "メイン画面に戻る">
+    </form>
+    -->
+    <button class = "button_1" onclick="location.href='./'">メイン画面に戻る</button>
+</body>
+</html>

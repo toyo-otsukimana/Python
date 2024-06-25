@@ -1,0 +1,38 @@
+<!--アプリケーションのメインとなる画面-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電子オウム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>何か話しかけてみよう</header>
+    <!--メイン画面の音声再生に関する処理をフォームで受け付ける-->
+    <form method = "POST" action = "/main_action" class = "form_1">
+        <div class="main_menu">
+            話しかける文字を入力しよう
+            <input type = "text" name = "talk" size = "30" placeholder = "ここに文字を入力" required>
+        </div>
+        <div class="main_menu">
+            音声再生時間を変える(単位：秒)<br>
+            <input type = "number" name = "seconds" value = "10" min = "1" max = "60" required> 秒
+        </div>
+        <div class="main_menu">
+            音声の速度を変える<br>
+            <input type = "radio" name = "voice" value = "standard_voice" checked>普通<br>
+            <input type = "radio" name = "voice" value = "slow_voice">ゆっくり<br>
+        </div>
+        <div class="main_menu">
+            言語を変える<br>
+            <input type = "radio" name = "language" value = "ja" checked>日本語<br>
+            <input type = "radio" name = "language" value = "en">英語<br><br>
+        </div>
+        <div>
+        <input class = "submit_1" type = "submit" value = "話しかける">
+        </div>
+    </form>
+    <br>
+	<button class = "button_1" onclick="location.href='./guide_4.html'">使い方はこちら</button>
+</html>
